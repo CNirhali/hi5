@@ -1,0 +1,52 @@
+{
+  "name": "commute-connect",
+  "version": "1.0.0",
+  "description": "A dating app designed especially for introverted commuters who travel daily and often notice someone they like but are too shy to approach.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "clean": "rm -rf node_modules backend/node_modules frontend/node_modules",
+    "lint": "npm run lint:backend && npm run lint:frontend",
+    "lint:backend": "cd backend && npm run lint",
+    "lint:frontend": "cd frontend && npm run lint",
+    "format": "npm run format:backend && npm run format:frontend",
+    "format:backend": "cd backend && npm run format",
+    "format:frontend": "cd frontend && npm run format"
+  },
+  "keywords": [
+    "dating",
+    "commute",
+    "location-based",
+    "privacy-first",
+    "real-time",
+    "mobile-app",
+    "introverts",
+    "social-connection"
+  ],
+  "author": "Commute Connect Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commute-connect/app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/commute-connect/app/issues"
+  },
+  "homepage": "https://commuteconnect.app"
+} 
